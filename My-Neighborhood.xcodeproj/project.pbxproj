@@ -14,6 +14,8 @@
 		6287317A1D56BC1900FC21CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628731781D56BC1900FC21CD /* LaunchScreen.storyboard */; };
 		628731831D56BD4500FC21CD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628731821D56BD4500FC21CD /* Post.swift */; };
 		628731861D56CC6900FC21CD /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628731851D56CC6900FC21CD /* PostCell.swift */; };
+		628731891D56D6DE00FC21CD /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628731881D56D6DE00FC21CD /* AddPostVC.swift */; };
+		6287318C1D57BE4500FC21CD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287318B1D57BE4500FC21CD /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		6287317B1D56BC1900FC21CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		628731821D56BD4500FC21CD /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		628731851D56CC6900FC21CD /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		628731881D56D6DE00FC21CD /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		6287318B1D57BE4500FC21CD /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,12 @@
 		6287316E1D56BC1900FC21CD /* My-Neighborhood */ = {
 			isa = PBXGroup;
 			children = (
+				6287318A1D57BE1C00FC21CD /* Services */,
 				628731811D56BD2200FC21CD /* Model */,
 				628731841D56CC2100FC21CD /* View */,
+				628731871D56D5F400FC21CD /* Controller */,
 				6287316F1D56BC1900FC21CD /* AppDelegate.swift */,
-				628731711D56BC1900FC21CD /* ViewController.swift */,
-				628731731D56BC1900FC21CD /* Main.storyboard */,
 				628731761D56BC1900FC21CD /* Assets.xcassets */,
-				628731781D56BC1900FC21CD /* LaunchScreen.storyboard */,
 				6287317B1D56BC1900FC21CD /* Info.plist */,
 			);
 			path = "My-Neighborhood";
@@ -81,9 +84,28 @@
 		628731841D56CC2100FC21CD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				628731781D56BC1900FC21CD /* LaunchScreen.storyboard */,
+				628731731D56BC1900FC21CD /* Main.storyboard */,
 				628731851D56CC6900FC21CD /* PostCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		628731871D56D5F400FC21CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				628731711D56BC1900FC21CD /* ViewController.swift */,
+				628731881D56D6DE00FC21CD /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6287318A1D57BE1C00FC21CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6287318B1D57BE4500FC21CD /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +181,8 @@
 			files = (
 				628731831D56BD4500FC21CD /* Post.swift in Sources */,
 				628731721D56BC1900FC21CD /* ViewController.swift in Sources */,
+				628731891D56D6DE00FC21CD /* AddPostVC.swift in Sources */,
+				6287318C1D57BE4500FC21CD /* DataService.swift in Sources */,
 				628731701D56BC1900FC21CD /* AppDelegate.swift in Sources */,
 				628731861D56CC6900FC21CD /* PostCell.swift in Sources */,
 			);
